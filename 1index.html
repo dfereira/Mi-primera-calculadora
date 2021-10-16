@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi calculadora</title>
+    <link rel="stylesheet" href="D.css">
+</head>
+<body>
+  <div>
+    <input type="number" class="caja" id="numero1">
+    <input type="number" class="caja" id="numero2">
+    <br>
+    <input type="button" value="SUMAR" onclick="sumar()" class="boton">
+    <input type="button" value="RESTAR" onclick="restar()" class="boton">
+    <input type="button" value="MULTIPLICAR" onclick="multiplicar()" class="boton">
+    <input type="button" value="DIVIDIR" onclick="dividir()" class="boton">
+    </div>  
+<br>
+    <span id="resultado"></span>
+<script>
+    var sumar = function (){
+        var a = document.getElementById('numero1').value
+        var b = document.getElementById('numero2').value
+        console.log(a)  
+        console.log(b)
+
+        var c = parseInt(a) + parseInt(b)
+        console.log(c)
+
+        var elementoSpan = document.getElementById('resultado');
+        elementoSpan.innerHTML = c;
+    }
+
+    var restar = function (){
+        var a = document.getElementById('numero1').value
+        var b = document.getElementById('numero2').value
+        console.log(a)  
+        console.log(b)
+
+        var c = parseInt(a) - parseInt(b)
+        console.log(c)
+
+        var elementoSpan = document.getElementById('resultado');
+        elementoSpan.innerHTML = c;
+    }
+
+    var multiplicar = function (){
+        var a = document.getElementById('numero1').value
+        var b = document.getElementById('numero2').value
+        console.log(a)  
+        console.log(b)
+
+        var c = parseInt(a) * parseInt(b)
+        console.log(c)
+
+        var elementoSpan = document.getElementById('resultado');
+        elementoSpan.innerHTML = c;
+    }
+
+    var dividir = function (){
+        var a = document.getElementById('numero1').value
+        var b = document.getElementById('numero2').value
+        console.log(a)
+        console.log(b)
+
+        var c = parseInt(a) / parseInt(b);
+       
+        console.log(c);
+
+        var elementoSpan = document.getElementById('resultado');
+        elementoSpan.innerHTML = c;
+
+    }
+
+</script>
+
+</body>
+</html>

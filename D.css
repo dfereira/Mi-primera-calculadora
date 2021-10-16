@@ -1,0 +1,31 @@
+input.caja {
+    border: 3px solid darkorchid;
+    width: 415px;
+    height: 58px;
+    background-color: #e3adde;
+    text-align: center;
+    font-family: fantasy;
+    font-size: 47px;
+    border-radius: 10px;
+}
+
+input.boton {
+    border-radius: 10px;
+    height: 41px;
+    width: 211px;
+    margin-top: 10px;
+    font-family: system-ui;
+    font-weight: 700;
+    color: white;
+    background-color: black;
+}
+
+span#resultado {
+    border: dashed;
+    border-color: darkmagenta;
+    font-size: 122px;
+    font-family: system-ui;
+    font-weight: 700;
+    padding: 9px 388px;
+    border-radius: 30px;
+}
